@@ -1,0 +1,179 @@
+.list {
+    font-size: 30px;
+    font-family: "Ubisoft Sans Bold", sans-serif;
+    display: flex;
+    text-align: center;
+    gap: 2px;
+    color: white; 
+    font-weight: bolder; 
+    text-decoration: none; 
+  }
+  
+  
+  .navbar {
+    background-color: #000000;
+  }
+  
+  .navbar-brand img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .navbar-nav .nav-item.list {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-item.list:hover {
+    color: #527e6e;
+  }
+  
+
+  .navbar-brand img {
+    width: 75px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 6px auto;
+  }
+
+  .navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #ddd;
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-color: #ddd;
+  }
+
+  .navbar-toggler.collapsed:hover .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  @media (max-width: 576px) {
+    .navbar-nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+  }
+
+
+
+  .jumbotron {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .jumbotron video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: -1
+  }
+  
+  
+  .shadow {
+    filter: drop-shadow(5px 5px 10px #2a2b2f) ;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .shadow:hover {
+    transform: scale(1.1);
+  }
+  
+  .card {
+    position: relative;
+   
+    aspect-ratio: 16/9;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card img {
+    width: 100%;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    font-family: "Ubisoft Sans Bold", sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  
+  .card__description {
+    margin: 10px 0 10px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card__button {
+    padding: 15px;
+    border-radius: 8px;
+    background: #527e6e;
+    border: none;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .secondary {
+    background: transparent;
+    color: #527e6e;
+    border: 1px solid #527e6e;
+    font-weight: bolder;
+  }
+  
